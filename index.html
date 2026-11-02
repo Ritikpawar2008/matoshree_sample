@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Matoshree Lawns — Luxury Wedding Destination</title>
+  <meta name="description" content="Matoshree Lawns is a premier luxury Maharashtrian wedding destination featuring sprawling illuminated lawns, authentic Peshwai grandeur, and bespoke hospitality.">
+  <link rel="icon" type="image/svg+xml" href="/src/assets/images/matoshree-logo.svg">
+
+  <!-- Google Fonts: Royal Serif & Modern Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Cinzel+Decorative:wght@700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Master Stylesheets -->
+  <link rel="stylesheet" href="/src/css/style.css">
+  <link rel="stylesheet" href="/src/css/lightbox.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       SITE HEADER / NAVIGATION
+       ========================================================================== -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="#hero" class="brand-logo-wrap" aria-label="Matoshree Lawns Home">
+        <img src="/src/assets/images/matoshree-logo-official.png" alt="मातोश्री लॉन्स — Matoshree Lawns" class="brand-logo-img">
+      </a>
+
+      <!-- Desktop Navigation Menu — Exactly 5 clean links -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li><a href="#hero" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#gallery" class="nav-link">Gallery</a></li>
+          <li><a href="#facilities" class="nav-link">Facilities</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Actions -->
+      <div class="header-actions">
+        <button class="btn btn-royal-gold trigger-tour-modal">Enquire Now</button>
+        <button class="hamburger-btn" id="hamburgerBtn" aria-label="Open mobile menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-nav-drawer" id="mobileDrawer">
+    <button class="modal-close-btn" id="closeDrawerBtn" aria-label="Close menu">&times;</button>
+    <a href="#hero" class="nav-link">Home</a>
+    <a href="#about" class="nav-link">About</a>
+    <a href="#gallery" class="nav-link">Gallery</a>
+    <a href="#facilities" class="nav-link">Facilities</a>
+    <a href="#contact" class="nav-link">Contact</a>
+    <button class="btn btn-royal-gold trigger-tour-modal" style="margin-top: 20px;">Enquire Now</button>
+  </div>
+
+  <!-- ==========================================================================
+       HERO SECTION (100vh FULL-SCREEN BACKGROUND WITH SLOW CSS ZOOM)
+       ========================================================================== -->
+  <section class="hero-section" id="hero">
+    <!-- Media Wrapper: Managed dynamically by JS with dual Image/Video engine -->
+    <div class="hero-media-wrapper" id="heroMediaWrapper">
+      <!-- High-res static photograph is injected with subtle CSS Ken-Burns zoom -->
+    </div>
+
+    <!-- Editorial Dark Maroon Gradient Overlay (Protects left 35-40% for typography) -->
+    <div class="hero-overlay"></div>
+
+    <!-- Hero Typography Content -->
+    <div class="container" style="position: relative; z-index: 3;">
+      <div class="hero-content">
+        <div class="royal-badge">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+          </svg>
+          <span>A Grand Maharashtrian Heritage Destination</span>
+        </div>
+
+        <h1 class="hero-title">
+          Where Royal Dreams Become <br>
+          <span class="gold-gradient-text">Timeless Forever</span>
+        </h1>
+
+        <p class="hero-subtitle">
+          Sprawling twilight illuminated lawns, authentic Peshwai grandeur, 
+          and bespoke wedding hospitality crafted for your once-in-a-lifetime Shubh Vivah.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="#celebrations" class="btn btn-royal-gold">Explore The Lawns</a>
+          <button class="btn btn-outline-gold trigger-tour-modal">Plan Your Shubh Vivah</button>
+          <button class="video-vision-badge trigger-video-modal" title="View 8-second cinematic establishing video concept">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+              <polygon points="5 3 19 12 5 21 5 3"/>
+            </svg>
+            <span>8s Cinema Video Concept</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Live Venue Stats Bar -->
+    <div class="hero-stats-bar">
+      <div class="container">
+        <div class="hero-stats-grid">
+          <div class="stat-item">
+            <div class="stat-number">Sprawling</div>
+            <div class="stat-label">Lush Green Lawns</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">Grand</div>
+            <div class="stat-label">Celebration Capacity</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">Luxury</div>
+            <div class="stat-label">Bridal & VIP Suites</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">Dedicated</div>
+            <div class="stat-label">Valet Parking Facility</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       ABOUT SECTION / TRADITIONAL HERITAGE
+       ========================================================================== -->
+  <section class="story-section" id="about">
+    <div class="container">
+      <div class="story-grid">
+        <!-- Visual Composition -->
+        <div class="story-visual-wrap">
+          <div class="story-main-img-wrap">
+            <img 
+              src="/src/assets/images/about-maharashtrian-entrance.jpg" 
+              alt="Traditional Maharashtrian wedding entrance at Matoshree Lawns with marigold floral garlands, banana canopy arch, brass samai lamps, and rangoli" 
+              loading="lazy" 
+              decoding="async"
+            />
+          </div>
+          <div class="story-accent-img-wrap">
+            <img 
+              src="/src/assets/images/samai-kalash-decor.jpg" 
+              alt="Traditional Maharashtrian wedding decor with lit brass Samai, sacred Kalash, marigold flowers, and rangoli" 
+              loading="lazy" 
+              decoding="async"
+            />
+          </div>
+          <div class="story-floating-badge">
+            <div class="badge-val">अविस्मरणीय</div>
+            <div class="badge-text">क्षणांचा सोबती • Matoshree Lawns</div>
+          </div>
+        </div>
+
+        <!-- Narrative Content -->
+        <div class="story-content-wrap">
+          <div class="section-tag">About Matoshree Lawns</div>
+          <h2 class="section-title">
+            Peshwai Elegance Meets <br>
+            <span class="gold-gradient-text">Contemporary Splendor</span>
+          </h2>
+          <p class="story-text">
+            Nestled amid serene landscapes, <strong>Matoshree Lawns</strong> was conceived as a tribute 
+            to Maharashtra’s storied architectural and wedding legacy. From the resonant echoes of the traditional Tutari 
+            welcoming the Baarat to the sacred pheras around the Vedic Vedi Mandap, we orchestrate 
+            weddings that reflect timeless royalty, genuine warmth, and cultural reverence.
+          </p>
+          <p class="story-text">
+            Every space is thoughtfully curated — combining expansive manicured greenery with regal pavilions, 
+            warm ambient chandeliers, and private air-conditioned suites — ensuring every celebration is unhurried and unforgettable.
+          </p>
+
+          <ul class="story-features-list">
+            <li class="story-feature-item">
+              <div class="story-feature-icon">✦</div>
+              <div>
+                <div class="story-feature-title">Traditional Tutari & Shehnai Welcome Courtyard</div>
+                <div class="story-feature-desc">An authentic ceremonial gateway designed for grand Baarat processions and welcome rituals.</div>
+              </div>
+            </li>
+            <li class="story-feature-item">
+              <div class="story-feature-icon">✦</div>
+              <div>
+                <div class="story-feature-title">Sacred Vedic Vedi Mandap Architecture</div>
+                <div class="story-feature-desc">Purpose-built holy platforms honoring sacred traditional Maharashtrian marriage customs.</div>
+              </div>
+            </li>
+            <li class="story-feature-item">
+              <div class="story-feature-icon">✦</div>
+              <div>
+                <div class="story-feature-title">Pure Maharashtrian & Global Royal Hospitality</div>
+                <div class="story-feature-desc">Dedicated banquet culinary complexes catering to authentic feasts, Ukadiche Modak, and modern gourmet spreads.</div>
+              </div>
+            </li>
+          </ul>
+
+          <button class="btn btn-royal-gold trigger-tour-modal">Enquire About Your Date</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       CELEBRATIONS SECTION (WEDDINGS, RECEPTIONS, PRE-WEDDING)
+       ========================================================================== -->
+  <section class="celebrations-section" id="celebrations">
+    <div class="container">
+      <div class="celebrations-header">
+        <div class="section-tag">Bespoke Celebrations</div>
+        <h2 class="section-title">Grand Occasions at <span class="gold-gradient-text">Matoshree</span></h2>
+        <p class="section-subtitle">
+          Whether you envision a sacred traditional Shubh Vivah, an illuminated starry-night reception gala, 
+          or joyous vibrant pre-wedding festivities, each setting is tailored to perfection.
+        </p>
+      </div>
+
+      <!-- Navigation Tabs -->
+      <div class="celebrations-tabs-nav">
+        <button class="celebration-tab-btn active" data-target="weddings">The Royal Shubh Vivah</button>
+        <button class="celebration-tab-btn" data-target="receptions">Celestial Evening Receptions</button>
+        <button class="celebration-tab-btn" data-target="preWedding">Pre-Wedding Festivities</button>
+      </div>
+
+      <!-- Dynamic Card Display -->
+      <div class="celebration-card-display" id="celebrationCardDisplay">
+        <div class="celebration-media-pane">
+          <img 
+            src="/src/assets/images/shubh-vivah-couple.jpg" 
+            alt="Traditional Maharashtrian wedding ceremony with bride in Nauvari saree and groom in Pheta with mundavalya" 
+            loading="lazy" 
+            decoding="async"
+          />
+          <div class="celebration-badge-pill">Sacred Rituals & Royal Mandap</div>
+        </div>
+
+        <div class="celebration-info-pane">
+          <h3 class="celebration-title">The Royal Shubh Vivah</h3>
+          <div class="celebration-tagline">Timeless Maharashtrian Vedic Ceremonies</div>
+          <p class="celebration-desc">
+            Exchange sacred vows in traditional Maharashtrian grandeur beneath an exquisite floral mandap, 
+            accompanied by traditional Shehnai melodies, flower petal showers, and sacred Vedic chants.
+          </p>
+
+          <div class="celebration-specs-grid">
+            <div class="spec-entry">
+              <span class="spec-label">Guest Capacity</span>
+              <span class="spec-val spec-capacity">Grand Guest Gatherings</span>
+            </div>
+            <div class="spec-entry">
+              <span class="spec-label">Venue Area</span>
+              <span class="spec-val spec-area">Spacious Lawn & Mandap Court</span>
+            </div>
+            <div class="spec-entry">
+              <span class="spec-label">Suites Included</span>
+              <span class="spec-val">Luxury Bridal & Groom Suites</span>
+            </div>
+            <div class="spec-entry">
+              <span class="spec-label">Ceremonial Features</span>
+              <span class="spec-val">Vedi Mandap, Baarat Path, Samai Lamps</span>
+            </div>
+          </div>
+
+          <div>
+            <button class="btn btn-royal-gold trigger-tour-modal">Inquire For Your Wedding</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FACILITIES SECTION (LAWNS & VENUE SPACES)
+       ========================================================================== -->
+  <section class="spaces-section" id="facilities">
+    <div class="container">
+      <div style="text-align: center;">
+        <div class="section-tag">Facilities & Venues</div>
+        <h2 class="section-title">Versatile <span class="gold-gradient-text">Spaces of Splendor</span></h2>
+        <p class="section-subtitle">
+          Thoughtfully designed interconnected lawns, air-conditioned banquet hall, 
+          and heritage stone courtyards customizable for every sacred ceremony.
+        </p>
+      </div>
+
+      <div class="spaces-grid">
+        <!-- Space 1: Sovereign Lawn -->
+        <div class="space-card">
+          <div class="space-card-img-wrap">
+            <img 
+              src="/src/assets/images/sovereign-lawn-mandap.jpg" 
+              alt="The Sovereign Grand Lawn decorated with an illuminated mandap and golden fairy lights" 
+              loading="lazy" 
+              decoding="async"
+            />
+            <span class="space-type-badge">Open-Air Twilight Lawn</span>
+          </div>
+          <div class="space-card-body">
+            <h3 class="space-title">The Sovereign Grand Lawn</h3>
+            <div class="space-metrics">
+              <div class="metric-pill">Capacity: <strong>Grand Gatherings</strong></div>
+              <div class="metric-pill">Type: <strong>Open-Air Lawn</strong></div>
+            </div>
+            <ul class="space-features">
+              <li>Endless manicured green lawn under starlit skies</li>
+              <li>Perimeter fairy lighting & volumetric tree illumination</li>
+              <li>Grand stage & mandap foundation with 360° sightlines</li>
+              <li>Separate high-capacity dining & live kitchen zone</li>
+            </ul>
+            <button class="btn btn-outline-gold trigger-tour-modal" style="width: 100%; margin-top: auto;">Explore Lawn</button>
+          </div>
+        </div>
+
+        <!-- Space 2: Rajwada Hall -->
+        <div class="space-card">
+          <div class="space-card-img-wrap">
+            <img 
+              src="/src/assets/images/rajwada-banquet-hall.jpg" 
+              alt="The Rajwada AC Palace banquet hall with chandeliers and royal banquet tables" 
+              loading="lazy" 
+              decoding="async"
+            />
+            <span class="space-type-badge">Centrally Air-Conditioned</span>
+          </div>
+          <div class="space-card-body">
+            <h3 class="space-title">The Rajwada AC Palace</h3>
+            <div class="space-metrics">
+              <div class="metric-pill">Capacity: <strong>Banqueting & Dining</strong></div>
+              <div class="metric-pill">Type: <strong>Pillarless AC Hall</strong></div>
+            </div>
+            <ul class="space-features">
+              <li>Pillarless acoustic architectural design</li>
+              <li>Spectacular crystal chandeliers & gold molding</li>
+              <li>High-tonnage central climate control</li>
+              <li>Integrated audio-visual and stage rigging</li>
+            </ul>
+            <button class="btn btn-outline-gold trigger-tour-modal" style="width: 100%; margin-top: auto;">Explore Hall</button>
+          </div>
+        </div>
+
+        <!-- Space 3: Shivalaya Courtyard -->
+        <div class="space-card">
+          <div class="space-card-img-wrap">
+            <img 
+              src="/src/assets/images/shivalaya-courtyard-ceremony.jpg" 
+              alt="The Shivalaya Heritage Courtyard with traditional bells, marigold hangings, and Vedic ceremony" 
+              loading="lazy" 
+              decoding="async"
+            />
+            <span class="space-type-badge">Heritage Stone Courtyard</span>
+          </div>
+          <div class="space-card-body">
+            <h3 class="space-title">The Shivalaya Courtyard</h3>
+            <div class="space-metrics">
+              <div class="metric-pill">Capacity: <strong>Intimate Ceremonies</strong></div>
+              <div class="metric-pill">Type: <strong>Heritage Courtyard</strong></div>
+            </div>
+            <ul class="space-features">
+              <li>Traditional carved architecture with festive floral decor</li>
+              <li>Intimate setting for Haldi, Mehendi & Sakhrapuda</li>
+              <li>Daytime shaded pergolas & evening brass samai lighting</li>
+              <li>Direct access to bridal prep suites</li>
+            </ul>
+            <button class="btn btn-outline-gold trigger-tour-modal" style="width: 100%; margin-top: auto;">Explore Courtyard</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       INTERACTIVE WEDDING PLANNER & CAPACITY ESTIMATOR
+       ========================================================================== -->
+  <section class="calculator-section" id="planner">
+    <div class="container">
+      <div class="calculator-card">
+        <div class="calc-controls-pane">
+          <div>
+            <div class="section-tag">Interactive Planner</div>
+            <h3 class="section-title" style="font-size: 2rem;">Estimate Your <span class="gold-gradient-text">Wedding Venue Setup</span></h3>
+            <p style="color: var(--ivory-muted); font-size: 0.95rem;">
+              Adjust your guest count and celebration requirements to get instant tailored venue recommendations.
+            </p>
+          </div>
+
+          <!-- Guest Count Slider -->
+          <div class="calc-slider-wrap">
+            <div class="slider-label-row">
+              <span class="slider-title">Expected Guests</span>
+              <span class="slider-value-display" id="calcGuestVal">1,200 Guests</span>
+            </div>
+            <input 
+              type="range" 
+              min="200" 
+              max="3000" 
+              step="50" 
+              value="1200" 
+              class="range-slider" 
+              id="calcGuestSlider"
+            />
+          </div>
+
+          <!-- Celebration Duration Slider -->
+          <div class="calc-slider-wrap">
+            <div class="slider-label-row">
+              <span class="slider-title">Celebration Duration</span>
+              <span class="slider-value-display" id="calcDaysVal">2 Days</span>
+            </div>
+            <input 
+              type="range" 
+              min="1" 
+              max="3" 
+              step="1" 
+              value="2" 
+              class="range-slider" 
+              id="calcDaysSlider"
+            />
+          </div>
+
+          <!-- Event Type Checkboxes -->
+          <div>
+            <span class="slider-title" style="display: block; margin-bottom: 10px;">Select Ceremonies:</span>
+            <div class="event-checkbox-grid">
+              <label class="event-pill-label">
+                <input type="checkbox" checked>
+                <span>Shubh Vivah (Wedding)</span>
+              </label>
+              <label class="event-pill-label">
+                <input type="checkbox" checked>
+                <span>Grand Evening Reception</span>
+              </label>
+              <label class="event-pill-label">
+                <input type="checkbox" checked>
+                <span>Sangeet Musical Night</span>
+              </label>
+              <label class="event-pill-label">
+                <input type="checkbox">
+                <span>Haldi & Sakhrapuda</span>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Real-Time Recommendation Display -->
+        <div class="calc-result-pane">
+          <div class="result-badge">Recommended Venue Configuration</div>
+          <h4 class="result-venue-name" id="calcRecommendedVenue">The Sovereign Grand Lawn + Rajwada Palace</h4>
+          <p class="result-specs-summary" id="calcSpecsResult">
+            Complete venue experience for your royal wedding. Expansive open-air lawn grounds, grand mandap court, luxury bridal suites, and full valet parking support.
+          </p>
+          <button class="btn btn-royal-gold trigger-tour-modal" style="width: 100%;">Reserve This Package</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       CURATED GALLERY SECTION (MASONRY LAYOUT & INTERACTIVE LIGHTBOX)
+       ========================================================================== -->
+  <section class="gallery-section" id="gallery">
+    <div class="container">
+      <div class="gallery-header">
+        <div class="section-tag">Visual Odyssey</div>
+        <h2 class="section-title">The <span class="gold-gradient-text">Matoshree Gallery</span></h2>
+        <p class="section-subtitle">
+          Explore the poetry of lights, grand floral mandaps, and timeless celebrations captured at Matoshree Lawns.
+          Click any photograph to view in high-resolution fullscreen.
+        </p>
+      </div>
+
+      <!-- Category Filter Tabs -->
+      <div class="gallery-filters">
+        <button class="filter-btn active" data-filter="all">All Photographs</button>
+        <button class="filter-btn" data-filter="mandap">Royal Mandap</button>
+        <button class="filter-btn" data-filter="decor">Night Lawn Decor</button>
+        <button class="filter-btn" data-filter="weddings">Weddings & Baarat</button>
+        <button class="filter-btn" data-filter="dining">Banquet & Dining</button>
+      </div>
+
+      <!-- Masonry Grid (Populated dynamically by gallery.js) -->
+      <div class="gallery-masonry" id="galleryGrid">
+        <!-- Rendered from images.config.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       ROYAL AMENITIES & EXPERIENCES
+       ========================================================================== -->
+  <section class="amenities-section" id="amenities">
+    <div class="container">
+      <div style="text-align: center;">
+        <div class="section-tag">Unmatched Hospitality</div>
+        <h2 class="section-title">Bespoke <span class="gold-gradient-text">Royal Amenities</span></h2>
+        <p class="section-subtitle">
+          Engineered for effortless grandeur, luxury comfort, and seamless execution of high-profile destination weddings.
+        </p>
+      </div>
+
+      <div class="amenities-grid">
+        <!-- Amenity 1 -->
+        <div class="amenity-card">
+          <div class="amenity-icon-wrap">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+              <polyline points="9 22 9 12 15 12 15 22"></polyline>
+            </svg>
+          </div>
+          <h3 class="amenity-title">15+ Luxury Bridal & VIP Suites</h3>
+          <p class="amenity-desc">
+            Expansive air-conditioned villas featuring dedicated bridal dressing lounges, full-length vanity mirrors, modern en-suite bathrooms, and 24/7 personal attendants.
+          </p>
+        </div>
+
+        <!-- Amenity 2 -->
+        <div class="amenity-card">
+          <div class="amenity-icon-wrap">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
+              <path d="M2 12h20"></path>
+            </svg>
+          </div>
+          <h3 class="amenity-title">Authentic Culinary Kitchens</h3>
+          <p class="amenity-desc">
+            State-of-the-art commercial catering kitchens equipped for 100% pure vegetarian Maharashtrian feasts, Gujarati thalis, and international gourmet buffet service.
+          </p>
+        </div>
+
+        <!-- Amenity 3 -->
+        <div class="amenity-card">
+          <div class="amenity-icon-wrap">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+            </svg>
+          </div>
+          <h3 class="amenity-title">Intelligent Twilight Lighting</h3>
+          <p class="amenity-desc">
+            Over 10,000 warm fairy lights, custom canopy illuminations, and computer-controlled concert stage lighting specifically calibrated for stunning wedding photography.
+          </p>
+        </div>
+
+        <!-- Amenity 4 -->
+        <div class="amenity-card">
+          <div class="amenity-icon-wrap">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="1" y="3" width="15" height="13"></rect>
+              <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+              <circle cx="5.5" cy="18.5" r="2.5"></circle>
+              <circle cx="18.5" cy="18.5" r="2.5"></circle>
+            </svg>
+          </div>
+          <h3 class="amenity-title">500+ Vehicle Valet & Chauffeur Lounge</h3>
+          <p class="amenity-desc">
+            Vast paved and illuminated parking grounds with professional uniformed valet marshals, wide multi-lane entryways, and dedicated driver resting suites.
+          </p>
+        </div>
+
+        <!-- Amenity 5 -->
+        <div class="amenity-card">
+          <div class="amenity-icon-wrap">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            </svg>
+          </div>
+          <h3 class="amenity-title">100% Uninterrupted Power Backup</h3>
+          <p class="amenity-desc">
+            Dual heavy-duty industrial diesel generators with instantaneous automatic switchover, ensuring your wedding lights and music never flicker for a single second.
+          </p>
+        </div>
+
+        <!-- Amenity 6 -->
+        <div class="amenity-card">
+          <div class="amenity-icon-wrap">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+              <circle cx="9" cy="7" r="4"></circle>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+            </svg>
+          </div>
+          <h3 class="amenity-title">Personal Wedding Concierge</h3>
+          <p class="amenity-desc">
+            An assigned royal wedding director coordinates everything from the Vedic Guruji schedule, Tutari procession timing, guest reception, and vendor logistics.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       ROYAL TESTIMONIALS
+       ========================================================================== -->
+  <section class="testimonials-section">
+    <div class="container">
+      <div style="text-align: center;">
+        <div class="section-tag">Royal Memories</div>
+        <h2 class="section-title">Words from Our <span class="gold-gradient-text">Couples & Families</span></h2>
+        <p class="section-subtitle">
+          Over a decade of orchestrating grand memories that families cherish for generations.
+        </p>
+      </div>
+
+      <div class="testimonials-grid">
+        <!-- Review 1 -->
+        <div class="testimonial-card">
+          <div class="quote-stars">★★★★★</div>
+          <p class="testimonial-quote">
+            "Hosting our daughter’s Shubh Vivah at Matoshree Lawns was nothing short of a royal dream. 
+            The twilight fairy lights, the grand entrance for the Baarat, and the sheer elegance of the floral mandap 
+            left all 1,800 guests spellbound. Truly unmatched in Pune!"
+          </p>
+          <div class="testimonial-author-block">
+            <div class="author-avatar">SP</div>
+            <div>
+              <div class="author-name">Dr. Sanjay & Mrs. Pratibha Patil</div>
+              <div class="author-event">Parents of the Bride • Dec 2025</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="testimonial-card">
+          <div class="quote-stars">★★★★★</div>
+          <p class="testimonial-quote">
+            "We wanted a venue that respected authentic Maharashtrian rituals yet gave us the grand luxury of a palace wedding. 
+            Matoshree Lawns delivered on every single promise. The AC bridal suites were lifesavers, and the valet management was seamless!"
+          </p>
+          <div class="testimonial-author-block">
+            <div class="author-avatar">RD</div>
+            <div>
+              <div class="author-name">Rohit & Dhanashree Deshmukh</div>
+              <div class="author-event">Groom & Bride • Jan 2026</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="testimonial-card">
+          <div class="quote-stars">★★★★★</div>
+          <p class="testimonial-quote">
+            "The evening reception on the Sovereign Lawn was magical. With crystal chandeliers suspended under open skies 
+            and the warm golden illumination, it felt like an international luxury destination in our home state. Exceptional staff!"
+          </p>
+          <div class="testimonial-author-block">
+            <div class="author-avatar">AK</div>
+            <div>
+              <div class="author-name">Aditya & Ketaki Kulkarni</div>
+              <div class="author-event">Wedding & Reception • Feb 2026</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FINAL CALL TO ACTION
+       ========================================================================== -->
+  <section class="final-cta-section" id="contact">
+    <div class="cta-backdrop-wrap">
+      <img 
+        src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=2400&q=85" 
+        alt="Matoshree Lawns Twilight Grandeur" 
+        loading="lazy" 
+        decoding="async"
+      />
+    </div>
+    <div class="cta-overlay"></div>
+
+    <div class="container">
+      <div class="cta-content-wrap">
+        <div class="section-tag">Begin Your Forever</div>
+        <h2 class="cta-title">
+          Let Your Royal Love Story <br>
+          <span class="gold-gradient-text">Unfold at Matoshree Lawns</span>
+        </h2>
+        <p class="cta-subtitle">
+          Dates for upcoming auspicious wedding muhurats fill up fast. 
+          Schedule a private sunset tour of the venue and consult with our royal wedding planners today.
+        </p>
+
+        <div class="cta-button-group">
+          <button class="btn btn-royal-gold trigger-tour-modal">Schedule Private Venue Tour</button>
+          <a href="https://wa.me/919822000000?text=Hello%20Matoshree%20Lawns,%20I%20would%20like%20to%20inquire%20about%20booking%20dates%20for%20a%20wedding." target="_blank" class="btn btn-outline-gold">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm5.79 14.07c-.24.68-1.39 1.3-1.92 1.38-.49.07-1.12.1-3.23-.77-2.7-1.12-4.44-3.87-4.58-4.05-.13-.18-1.09-1.45-1.09-2.77 0-1.32.69-1.96.93-2.22.25-.26.54-.33.72-.33.18 0 .36 0 .52.01.17.01.39-.07.61.46.23.54.78 1.91.85 2.05.07.15.11.32.02.51-.1.18-.15.3-.3.47-.15.18-.31.39-.44.53-.15.15-.3.32-.13.62.17.3 76 1.25 1.63 2.03 1.12 1 2.06 1.31 2.36 1.45.3.15.47.13.65-.08.18-.2.77-.9 98-1.21.2-.3.41-.26.69-.15.28.11 1.79.84 2.1 1 .31.15.52.23.6.36.07.14.07.8-.17 1.48z"/>
+            </svg>
+            <span>WhatsApp Concierge</span>
+          </a>
+        </div>
+
+        <div class="cta-contact-pills">
+          <div>Direct Hotline: <a href="tel:+919822000000">+91 98220 00000</a></div>
+          <div>•</div>
+          <div>Email: <a href="mailto:weddings@matoshreelawns.com">weddings@matoshreelawns.com</a></div>
+          <div>•</div>
+          <div>Pune-Nashik Highway, Pune</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SITE FOOTER
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand Summary -->
+        <div class="footer-brand">
+          <img src="/src/assets/images/matoshree-logo-official.png" alt="मातोश्री लॉन्स — Matoshree Lawns" class="brand-logo-img" style="height: 56px; width: 56px; border-radius: 50%;">
+          <p>
+            Matoshree Lawns stands as Maharashtra’s foremost luxury wedding sanctuary, 
+            blending the majesty of historic Maratha architecture with world-class hospitality.
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="footer-col-title">Quick Links</h4>
+          <ul class="footer-nav-list">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#facilities">Facilities</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Experiences -->
+        <div>
+          <h4 class="footer-col-title">Celebrations</h4>
+          <ul class="footer-nav-list">
+            <li><a href="#celebrations">The Royal Shubh Vivah</a></li>
+            <li><a href="#celebrations">Evening Receptions</a></li>
+            <li><a href="#celebrations">Pre-Wedding Festivities</a></li>
+            <li><a href="#facilities">Lawn & Hall Facilities</a></li>
+            <li><a href="#" class="trigger-video-modal">8s Cinema Video Concept</a></li>
+          </ul>
+        </div>
+
+        <!-- Location & Visiting Info -->
+        <div>
+          <h4 class="footer-col-title">Venue Concierge</h4>
+          <div class="footer-contact-details">
+            <div class="contact-row">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <span>Matoshree Lawns Estate, Maharashtra, India</span>
+            </div>
+            <div class="contact-row">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+              <span>Visiting Hours: 10:00 AM – 7:30 PM (All 7 Days)</span>
+            </div>
+            <div class="contact-row">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              <span>weddings@matoshreelawns.com</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom-bar">
+        <div>&copy; 2026 Matoshree Lawns. All Rights Reserved. Crafted for Royal Celebrations.</div>
+        <div>Configured for Image-First Prototype • Ready for 8s 4K Video Integration</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       FULLSCREEN INTERACTIVE LIGHTBOX MODAL
+       ========================================================================== -->
+  <div class="lightbox-modal" id="lightboxModal" role="dialog" aria-modal="true" aria-label="Photo Lightbox">
+    <!-- Top Bar -->
+    <div class="lightbox-top-bar">
+      <div class="lightbox-counter" id="lightboxCounter">1 of 12</div>
+      <div class="lightbox-category-badge" id="lightboxCategory">Royal Mandap</div>
+      <button class="lightbox-close-btn" id="lightboxClose" aria-label="Close Lightbox">&times;</button>
+    </div>
+
+    <!-- Center Stage -->
+    <div class="lightbox-stage">
+      <button class="lightbox-nav-btn lightbox-prev-btn" id="lightboxPrev" aria-label="Previous image">&#10094;</button>
+      <div class="lightbox-img-container">
+        <img src="" alt="" id="lightboxImg" class="lightbox-img">
+      </div>
+      <button class="lightbox-nav-btn lightbox-next-btn" id="lightboxNext" aria-label="Next image">&#10095;</button>
+    </div>
+
+    <!-- Bottom Caption Bar -->
+    <div class="lightbox-bottom-bar">
+      <h3 class="lightbox-caption-title" id="lightboxTitle">Image Title</h3>
+      <p class="lightbox-caption-desc" id="lightboxDesc">Description of this royal wedding setting.</p>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       PRIVATE VENUE TOUR BOOKING MODAL
+       ========================================================================== -->
+  <div class="modal-overlay" id="tourBookingModal" role="dialog" aria-modal="true">
+    <div class="modal-dialog">
+      <button class="modal-close-btn" id="closeTourModal" aria-label="Close modal">&times;</button>
+      
+      <div class="section-tag">Private Appointment</div>
+      <h3 class="section-title" style="font-size: 1.8rem;">Schedule a <span class="gold-gradient-text">Sunset Tour</span></h3>
+      <p style="color: var(--ivory-muted); font-size: 0.92rem;">
+        Walk the starlit lawns, inspect the bridal villas, and review our dates with our senior venue concierge.
+      </p>
+
+      <form id="venueTourForm">
+        <div class="booking-form-grid">
+          <div>
+            <label class="form-label" for="tourName">Your Full Name *</label>
+            <input type="text" id="tourName" class="form-input" placeholder="e.g. Anand Deshmukh" required>
+          </div>
+          <div>
+            <label class="form-label" for="tourPhone">Phone Number *</label>
+            <input type="tel" id="tourPhone" class="form-input" placeholder="+91 98000 00000" required>
+          </div>
+          <div>
+            <label class="form-label" for="tourEmail">Email Address</label>
+            <input type="email" id="tourEmail" class="form-input" placeholder="anand@example.com">
+          </div>
+          <div>
+            <label class="form-label" for="tourEventType">Occasion Type</label>
+            <select id="tourEventType" class="form-select">
+              <option value="wedding">Royal Shubh Vivah (Wedding)</option>
+              <option value="reception">Evening Reception Gala</option>
+              <option value="sangeet">Sangeet / Mehendi</option>
+              <option value="sakhrapuda">Sakhrapuda (Engagement)</option>
+              <option value="multi-day">Complete 2-3 Day Wedding Destination</option>
+            </select>
+          </div>
+          <div>
+            <label class="form-label" for="tourDate">Tentative Event Date</label>
+            <input type="date" id="tourDate" class="form-input">
+          </div>
+          <div>
+            <label class="form-label" for="tourGuests">Estimated Guest Count</label>
+            <select id="tourGuests" class="form-select">
+              <option value="300-500">300 – 500 Guests</option>
+              <option value="500-1000" selected>500 – 1,000 Guests</option>
+              <option value="1000-2000">1,000 – 2,000 Guests</option>
+              <option value="2000+">2,000+ Grand Gathering</option>
+            </select>
+          </div>
+          <div class="form-group-full">
+            <label class="form-label" for="tourNotes">Specific Requests or Preferred Tour Timing</label>
+            <textarea id="tourNotes" rows="3" class="form-textarea" placeholder="e.g. We would love to see the lighting setup at twilight around 6 PM."></textarea>
+          </div>
+          <div class="form-group-full" style="margin-top: 10px;">
+            <button type="submit" class="btn btn-royal-gold" style="width: 100%;">Confirm Private Tour Request</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       8-SECOND CINEMATIC HERO VIDEO VISION MODAL
+       ========================================================================== -->
+  <div class="modal-overlay" id="videoVisionModal" role="dialog" aria-modal="true">
+    <div class="modal-dialog" style="max-width: 720px;">
+      <button class="modal-close-btn" id="closeVideoModal" aria-label="Close modal">&times;</button>
+      
+      <div class="section-tag">Cinematography Blueprint</div>
+      <h3 class="section-title" style="font-size: 1.8rem;">8-Second Hero <span class="gold-gradient-text">Video Vision</span></h3>
+      <p style="color: var(--ivory-muted); font-size: 0.92rem; margin-bottom: 24px;">
+        Designed specifically for full-screen hero integration behind our royal typography.
+      </p>
+
+      <div style="background: rgba(20,4,4,0.7); border: 1px solid var(--gold-border); border-radius: 6px; padding: 22px; margin-bottom: 20px;">
+        <div style="display: flex; gap: 10px; margin-bottom: 12px; font-weight: 700; color: var(--gold-champagne);">
+          <span>0–2s:</span>
+          <span style="color: var(--ivory-white); font-weight: 400;">Wide establishing shot of the sprawling wedding lawn at blue-hour twilight with warm golden fairy lights.</span>
+        </div>
+        <div style="display: flex; gap: 10px; margin-bottom: 12px; font-weight: 700; color: var(--gold-champagne);">
+          <span>2–4s:</span>
+          <span style="color: var(--ivory-white); font-weight: 400;">Slow stabilized forward glide towards grand entrance with architectural gold details.</span>
+        </div>
+        <div style="display: flex; gap: 10px; margin-bottom: 12px; font-weight: 700; color: var(--gold-champagne);">
+          <span>4–6s:</span>
+          <span style="color: var(--ivory-white); font-weight: 400;">Reveal royal floral mandap decorated with ivory blooms, champagne gold, and deep maroon florals.</span>
+        </div>
+        <div style="display: flex; gap: 10px; font-weight: 700; color: var(--gold-champagne);">
+          <span>6–8s:</span>
+          <span style="color: var(--ivory-white); font-weight: 400;">Camera settles into wide composition: mandap on center-right; left 35–40% dark and uncluttered for typography.</span>
+        </div>
+      </div>
+
+      <div style="font-size: 0.88rem; color: var(--ivory-muted); line-height: 1.65; margin-bottom: 24px;">
+        <strong>Color Grading:</strong> Deep Royal Maroon (<span style="color: #E5C378;">#350707</span>), Rich Burgundy (<span style="color: #E5C378;">#250606</span>), Antique Gold (<span style="color: #E5C378;">#C99A3D</span>), Warm Ivory.<br>
+        <strong>Technical:</strong> 8.00 seconds, 24fps cinematic shutter, zero cuts, full-frame cinema glass.
+      </div>
+
+      <div style="text-align: right;">
+        <button class="btn btn-royal-gold" onclick="document.getElementById('videoVisionModal').classList.remove('active'); document.body.style.overflow='';">Close Blueprint</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast-notice" id="siteToast">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#C99A3D" stroke-width="2">
+      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+      <polyline points="22 4 12 14.01 9 11.01"></polyline>
+    </svg>
+    <div id="toastMessage">Your request has been submitted successfully.</div>
+  </div>
+
+  <!-- ==========================================================================
+       FLOATING CONTACT BUTTONS (WHATSAPP & CALL)
+       ========================================================================== -->
+  <div class="floating-contact-group" aria-label="Quick Contact Actions">
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/919822000000?text=Namaskar%20Matoshree%20Lawns,%20I%20would%20like%20to%20inquire%20about%20booking%20dates%20for%20a%20wedding." 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       class="floating-btn whatsapp-btn" 
+       aria-label="Chat on WhatsApp">
+      <span class="btn-tooltip">Chat on WhatsApp</span>
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm5.79 14.07c-.24.68-1.39 1.3-1.92 1.38-.49.07-1.12.1-3.23-.77-2.7-1.12-4.44-3.87-4.58-4.05-.13-.18-1.09-1.45-1.09-2.77 0-1.32.69-1.96.93-2.22.25-.26.54-.33.72-.33.18 0 .36 0 .52.01.17.01.39-.07.61.46.23.54.78 1.91.85 2.05.07.15.11.32.02.51-.1.18-.15.3-.3.47-.15.18-.31.39-.44.53-.15.15-.3.32-.13.62.17.3.76 1.25 1.63 2.03 1.12 1 2.06 1.31 2.36 1.45.3.15.47.13.65-.08.18-.2.77-.9.98-1.21.2-.3.41-.26.69-.15.28.11 1.79.84 2.1 1 .31.15.52.23.6.36.07.14.07.8-.17 1.48z"/>
+      </svg>
+    </a>
+
+    <!-- Phone / Call Floating Button -->
+    <a href="tel:+919822000000" 
+       class="floating-btn phone-btn" 
+       aria-label="Call Venue Concierge">
+      <span class="btn-tooltip">Call Concierge</span>
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+      </svg>
+    </a>
+  </div>
+
+  <!-- Main JavaScript Application Entry -->
+  <script type="module" src="/src/js/main.js"></script>
+</body>
+</html>
