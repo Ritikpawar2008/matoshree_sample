@@ -233,7 +233,8 @@ h1, h2, h3, h4, .font-serif {
 .brand-logo-img {
   height: 60px;
   width: 60px;
-  object-fit: cover;
+  object-fit: contain;
+  background: #250606;
   border-radius: 50%;
   border: 1.5px solid var(--gold-antique);
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
@@ -331,6 +332,7 @@ h1, h2, h3, h4, .font-serif {
   height: 100%;
   z-index: 1;
   overflow: hidden;
+  background: url('/images/matoshree-twilight-hero.jpg') center right / cover no-repeat;
 }
 
 .hero-media {

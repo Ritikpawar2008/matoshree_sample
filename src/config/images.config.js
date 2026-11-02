@@ -5,14 +5,13 @@
  * To replace temporary stock imagery with actual Matoshree Lawns photographs:
  * simply update the URLs or local file paths in this file.
  */
-
 // Primary Hero Media Configuration (Supports instant toggle between image and video)
 export const HERO_MEDIA_CONFIG = {
   // 'image' for high-resolution static photography, 'video' for background video
   type: 'image',
   
   // Bespoke ultra-photorealistic twilight luxury wedding lawn with fairy lights & mandap
-  imageSrc: '/src/assets/images/matoshree-twilight-hero.jpg',
+  imageSrc: '/images/matoshree-twilight-hero.jpg',
   
   // Path for 8-second cinematic video (ready for hot-swapping once rendered)
   videoSrc: 'assets/videos/hero-background.mp4',
@@ -37,9 +36,9 @@ export const HERO_MEDIA_CONFIG = {
 // Official Logo Configuration
 export const LOGO_CONFIG = {
   // Original supplied Matoshree Lawns logo
-  primary: '/src/assets/images/matoshree-logo-official.png',
+  primary: '/images/matoshree-logo-official.png',
   // Vector royal crest fallback
-  svgFallback: '/src/assets/images/matoshree-logo.svg',
+  svgFallback: '/images/matoshree-logo.svg',
   alt: 'मातोश्री लॉन्स — Matoshree Lawns'
 };
 
@@ -48,12 +47,12 @@ export const SECTION_IMAGES = {
   // Our Story / Heritage Section (About)
   story: {
     main: {
-      url: '/src/assets/images/about-maharashtrian-entrance.jpg',
+      url: '/images/about-maharashtrian-entrance.jpg',
       alt: 'Traditional Maharashtrian wedding entrance at Matoshree Lawns with marigold floral garlands, banana canopy arch, brass samai lamps, and rangoli',
       caption: 'Traditional Heritage Welcome'
     },
     secondary: {
-      url: '/src/assets/images/samai-kalash-decor.jpg',
+      url: '/images/samai-kalash-decor.jpg',
       alt: 'Traditional Maharashtrian wedding decor with lit brass Samai, sacred Kalash, marigold flowers, and rangoli',
       caption: 'Traditional Samai & Kalash'
     }
@@ -68,7 +67,7 @@ export const SECTION_IMAGES = {
       description: 'Exchange sacred vows in traditional Maharashtrian grandeur beneath an exquisite floral mandap, accompanied by traditional Shehnai and Tutari melodies.',
       capacity: 'Grand Guest Gatherings',
       lawnArea: 'Spacious Lawn & Mandap Courtyard',
-      imageUrl: '/src/assets/images/shubh-vivah-couple.jpg',
+      imageUrl: '/images/shubh-vivah-couple.jpg',
       alt: 'Traditional Maharashtrian wedding ceremony with bride in Nauvari saree and groom in Pheta with mundavalya'
     },
     receptions: {
@@ -100,7 +99,7 @@ export const SECTION_IMAGES = {
       capacity: 'Grand Celebrations',
       size: 'Expansive Open-Air Grounds',
       type: 'Open-Air Lawn',
-      imageUrl: '/src/assets/images/sovereign-lawn-mandap.jpg',
+      imageUrl: '/images/sovereign-lawn-mandap.jpg',
       alt: 'Sprawling outdoor wedding lawn with illuminated dome mandap and golden fairy lights'
     },
     rajwadaHall: {
@@ -108,7 +107,7 @@ export const SECTION_IMAGES = {
       capacity: 'Banqueting & Dining',
       size: 'Centrally Air-Conditioned Hall',
       type: 'Centrally Air-Conditioned Pillarless Hall',
-      imageUrl: '/src/assets/images/rajwada-banquet-hall.jpg',
+      imageUrl: '/images/rajwada-banquet-hall.jpg',
       alt: 'Grand crystal chandeliers inside the Rajwada banquet hall with royal tables'
     },
     shivalayaCourtyard: {
@@ -116,7 +115,7 @@ export const SECTION_IMAGES = {
       capacity: 'Intimate Ceremonies',
       size: 'Paved Heritage Courtyard',
       type: 'Stone-Paved Heritage Courtyard',
-      imageUrl: '/src/assets/images/shivalaya-courtyard-ceremony.jpg',
+      imageUrl: '/images/shivalaya-courtyard-ceremony.jpg',
       alt: 'Traditional courtyard wedding ceremony with bells, marigold hangings, and brass samai'
     }
   },

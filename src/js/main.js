@@ -70,6 +70,10 @@ function initHeroMedia() {
 }
 
 function loadHeroImage(container) {
+  const existingImg = container.querySelector('img.hero-image');
+  if (existingImg && existingImg.getAttribute('src') === HERO_MEDIA_CONFIG.imageSrc) {
+    return;
+  }
   container.innerHTML = '';
   const img = document.createElement('img');
   img.className = `hero-media hero-image ${HERO_MEDIA_CONFIG.kenBurns ? 'ken-burns' : ''}`;
